@@ -1,0 +1,80 @@
+/* The cards will appear after createGameBoard() function in js. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.card.face-up {
+  transform: rotate(360deg) !important;
+  -webkit-transform: rotate(360deg) !important;
+  -moz-transform: rotate(360deg) !important;
+  -ms-transform: rotate(360deg) !important;
+  -o-transform: rotate(360deg) !important;
+  background-color: #2ecc71;
+  cursor: default;
+}
+
+.card.face-down {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
+.card.match {
+  background-color: rgb(250, 54, 87);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#restart-button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+#restart-button:hover {
+  background-color: #c0392b;
+}
